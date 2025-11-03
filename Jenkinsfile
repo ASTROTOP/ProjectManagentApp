@@ -34,7 +34,7 @@ pipeline {
                 // Stop and remove any existing container with the same name
                 sh '''
                     docker rm -f project-mgmt-container || true
-                    docker run -d -p 8080:8080 --name project-mgmt-container project-mgmt-app
+                    docker run -d -p 9090:9090 --name project-mgmt-container project-mgmt-app
                 '''
             }
         }
